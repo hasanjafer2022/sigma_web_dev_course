@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* universal selector */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* ElemMENT SELECTORS */
+        div{
+            background-color: red;
+        }
+        .red{
+            background-color: yellow;
+        }
+        #green{
+            background-color: greenyellow;
+        }
+
+        /*child selector */
+        div > p{
+            background-color: blue;
+            color: white;
+        }
+        /*decendent selector */
+        span  p{
+            background-color: blue;
+            color: white;
+        }
+
+        /* pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>I am a div.</div>
+
+    <!-- class selectors -->
+    <div class="red">Hello I am another div</div>
+
+    <!-- id selectors -->
+    <div id="green">Hello I am another div </div>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sed numquam neque hic?</p>
+    </div>
+    <span>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, voluptatibus. Unde, nostrum obcaecati?</p>
+        </div>
+    </span>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+
+    <main class="one">
+        <p>I am first</p>
+        <p>I am Second</p>
+    </main>
+</body>
+</html>
