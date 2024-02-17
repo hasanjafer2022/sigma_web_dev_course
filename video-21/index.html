@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascsde </title>
+    <style>
+        /* The specificity of this selector is 1 */
+    .aqua{
+        color:aqua;
+    }
+
+    /* The specificity of this selector is 10 */
+    .cpurple{
+        color:purple;
+    }
+
+     /* The specificity of this selector is 10 */
+    .cred{
+        color: red;
+    }
+
+     /* The specificity of this selector is 1+10 */
+    h1.yellow{
+        color:yellow;
+         /* ab iskiii zyada  hoogiii specificity  */
+    }
+
+     /* This is anexample of attribute selector. The specificity of this selector is 10 */
+    [data-x=a]{
+         color: maroon;
+    }
+
+     /* The specificity color of this selector is 1 + 10+ 10+ 10+ 10 = 41 */
+     a/hasanclass.jaferclass[href]:hover{
+        color: blueviolet;
+     }
+    </style>
+    
+</head>
+<body>
+    <h1 class="aqua cpurple cred yellow" data-x="a">CSS Specificity</h1>
+</body>
+</html>
