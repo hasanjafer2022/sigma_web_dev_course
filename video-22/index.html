@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Uinits - px, rem, em, vh, vw, & more..</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 204px; */
+            width: 80vw;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: auto;
+            height: 10vh;
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 204px; */
+            width: 80vw;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: 23px auto;
+            /* height: 80vh; */
+            min-height: 80vh;
+            /* font-size: 18px; */
+        }
+
+        .container > div{
+            /* font-size: 2rem; */
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+        }
+
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .mycount {
+            /* background-color: red; */
+            /* color: yellow;
+            font-size: 22px;
+            width: 100vmin;
+         */
+            border: 2px solid black;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            margin: 23px auto;
+            box-sizing: border-box;
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box.
+    </div>
+
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet nostrum at aspernatur
+            consectetur quaerat suscipit, quasi eaque illum rerum sint! Nostrum harum consectetur obcaecati, doloremque
+            dolor sint laborum illo asperiores provident recusandae omnis delectus quam eius aliquam ipsum perspiciatis
+            iusto quis minima nihil. Voluptatem quis dolores blanditiis ipsum ipsam sed. Iusto pariatur consequatur ipsa
+            optio?
+        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempora, atque molestias sit aut
+            aspernatur quis quos molestiae natus nam ratione ab consectetur!</div>
+        </div>
+    </div>
+
+    <div class="mycount">I am another container</div>
+</body>
+
+</html>
