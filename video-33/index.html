@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Multi Color Website</title>
+    <style>
+        :root {
+    --primary-color: #3498db; /* Default primary color */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+    </style>
+</head>
+<body>
+    <!-- Create a multicolor website which can change color using CSS Variables -->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Multicolor Website!</h1>
+        <p>This is a simple example demonstrating the use of CSS Variables to change colors dynamically.</p>
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+
+    <!-- <script>
+        function changeColor() {
+            document.documentElement.style.setProperty('--primary-color', getRandomColor());
+        }
+
+        function getRandomColor() {
+            // Generate a random hex color code
+            return '#' + Math.floor(Math.random()*16777215).toString(16);
+        }
+    </script> -->
+
+</body>
+</html>
+
+</body>
+</html>
