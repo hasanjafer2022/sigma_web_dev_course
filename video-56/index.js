@@ -32,16 +32,16 @@ let age = 20;
 // if(age==18){
 //     console.log("You can drive");
 // }
-if (age != 18) {
-    console.log("You can drive");
-}
-else {
-    console.log("You cannot drive");
-}
+// if (age != 18) {
+//     console.log("You can drive");
+// }
+// else {
+//     console.log("You cannot drive");
+// }
 
-console.log("Hello I am conditional tutorial")
+// console.log("Hello I am conditional tutorial")
 
-let age = 1;
+// let age = 1;
 // let grace = 2;
 
 // age += grace
