@@ -1,6 +1,6 @@
 console.log("I am a tutorial on Loops")
 
-let a = 1;
+// let a = 1;
 // console.log(a)
 // console.log(a+1)
 // console.log(a+2)
@@ -29,8 +29,8 @@ let a = 1;
 //     i++;
 // }
 
-let i = 10;
-do {
-    console.log(i)
-    i++;
-} while (i<6);
+// let i = 10;
+// do {
+//     console.log(i)
+//     i++;
+// } while (i<6);
