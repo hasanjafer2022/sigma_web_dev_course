@@ -48,17 +48,35 @@ document.querySelector(".child").addEventListener("click", (e)=>{
 })
 
 
-document.querySelector(".child-container").addEventListener("click", ()=>{
+document.querySelector(".child-container").addEventListener("click", (e)=>{
     e.stopPropagation() // stopping parents to get alert on window
    alert("Child Container was  click!")
 })
 
 
-document.querySelector(".container").addEventListener("click", ()=>{
+document.querySelector(".container").addEventListener("click", (e)=>{
 
     alert("Container was click!")
 })
+function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        // let a = setInterval(() => {
+        //     document.querySelector(".child-container").style.backgroundColor = getRandomColor();
+        // }, 1000);
 
+        //      console.log(a)
+
+        let a = clearInterval(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 5000);
+
+        console.log(a)
+
+        
 
     </script>
 </body>
